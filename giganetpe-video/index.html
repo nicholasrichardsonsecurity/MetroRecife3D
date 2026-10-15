@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>GigaNetPe Telecom — Vaga Vendedor(a)</title>
+<style>
+  @font-face{font-family:'GigaInter';src:url('fonts/Inter-Black.otf');font-weight:900}
+  :root{--bg1:#05021a;--bg2:#1a0b4d;--blue:#2b4cff;--purple:#7a2bff;--cyan:#19f3ff;--green:#2dff9a;--white:#f4f7ff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;background:#05021a;overflow:hidden;font-family:'GigaInter',Inter,Arial,sans-serif;font-weight:900}
+  #root{position:relative;width:1080px;height:1920px;overflow:hidden;
+    background:radial-gradient(ellipse at 50% 20%,#2a1480 0%,#120a45 45%,#05021a 100%)}
+  .clip{position:absolute;inset:0}
+  #stars,#net{position:absolute;inset:0}
+  .star{position:absolute;border-radius:50%;background:#fff}
+  .grid{position:absolute;left:-60%;width:220%;height:900px;bottom:-120px;
+    background:
+      repeating-linear-gradient(90deg,rgba(25,243,255,.35) 0 2px,transparent 2px 90px),
+      repeating-linear-gradient(0deg,rgba(122,43,255,.45) 0 2px,transparent 2px 80px);
+    transform:perspective(600px) rotateX(68deg);transform-origin:50% 100%;
+    -webkit-mask-image:linear-gradient(to top,#000 10%,transparent 90%);mask-image:linear-gradient(to top,#000 10%,transparent 90%)}
+  .glow{position:absolute;border-radius:50%;filter:blur(90px)}
+  .scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 70px}
+  .brand{color:var(--white);font-size:150px;line-height:1;letter-spacing:-4px;text-transform:uppercase;
+    text-shadow:0 0 30px rgba(25,243,255,.7),0 0 80px rgba(43,76,255,.8)}
+  .brand span{color:var(--cyan)}
+  .sub{margin-top:24px;font-size:56px;letter-spacing:22px;color:var(--green);text-transform:uppercase;text-shadow:0 0 24px rgba(45,255,154,.8)}
+  .tag{font-size:44px;letter-spacing:6px;color:var(--cyan);text-transform:uppercase;font-weight:900}
+  .big{color:var(--white);text-transform:uppercase;font-size:164px;line-height:.95;letter-spacing:-3px;
+    text-shadow:0 0 28px rgba(122,43,255,.9),0 8px 0 rgba(43,76,255,.9)}
+  .neon{color:var(--green);text-shadow:0 0 22px rgba(45,255,154,.9),0 0 70px rgba(45,255,154,.55)}
+  .cy{color:var(--cyan);text-shadow:0 0 22px rgba(25,243,255,.9),0 0 70px rgba(25,243,255,.5)}
+  .pill{display:inline-block;padding:26px 54px;border-radius:999px;border:5px solid var(--green);color:var(--green);
+    font-size:58px;text-transform:uppercase;box-shadow:0 0 40px rgba(45,255,154,.6),inset 0 0 30px rgba(45,255,154,.25);background:rgba(45,255,154,.08)}
+  .card{margin-top:40px;padding:50px 56px;border-radius:44px;background:rgba(10,6,50,.65);border:4px solid var(--cyan);
+    box-shadow:0 0 60px rgba(25,243,255,.5),inset 0 0 40px rgba(122,43,255,.35)}
+  .phone{font-size:112px;color:var(--white);letter-spacing:-2px;text-shadow:0 0 30px rgba(45,255,154,.9);white-space:nowrap}
+  .wa{width:150px;height:150px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;
+    box-shadow:0 0 60px rgba(45,255,154,.9);margin-bottom:30px}
+  svg{overflow:visible}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="root" data-width="1080" data-height="1920">
+
+  <!-- persistent background -->
+  <div id="bg" class="clip" data-start="0" data-duration="28">
+    <div class="glow" id="g1" style="width:900px;height:900px;left:-300px;top:-100px;background:#5a1fe0;opacity:.55"></div>
+    <div class="glow" id="g2" style="width:800px;height:800px;right:-300px;top:900px;background:#0a5cff;opacity:.5"></div>
+    <div id="stars"></div>
+    <div class="grid"></div>
+    <svg id="net" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+  </div>
+
+  <!-- 1. Abertura -->
+  <div id="s1" class="clip" data-start="0" data-duration="5">
+    <div class="scene">
+      <svg id="wifi" width="520" height="420" viewBox="0 0 200 160" style="margin-bottom:50px">
+        <defs><linearGradient id="wg" x1="0" x2="1"><stop offset="0" stop-color="#19f3ff"/><stop offset="1" stop-color="#2dff9a"/></linearGradient></defs>
+        <g fill="none" stroke="url(#wg)" stroke-width="12" stroke-linecap="round">
+          <path class="arc" d="M18 62 A116 116 0 0 1 182 62"/>
+          <path class="arc" d="M42 88 A82 82 0 0 1 158 88"/>
+          <path class="arc" d="M66 114 A46 46 0 0 1 134 114"/>
+        </g>
+        <circle id="dot" cx="100" cy="140" r="13" fill="#2dff9a"/>
+      </svg>
+      <div class="brand" id="b1">Giga<span>Net</span>Pe</div>
+      <div class="sub" id="b2">Telecom</div>
+      <div class="tag" id="b3" style="margin-top:50px;color:#fff;opacity:.85">Internet sem limites</div>
+    </div>
+  </div>
+
+  <!-- 2. Estamos contratando -->
+  <div id="s2" class="clip" data-start="5" data-duration="5">
+    <div class="scene">
+      <div class="pill" id="p2" style="margin-bottom:60px">📡 Atenção, galera!</div>
+      <div class="big" id="h2a" style="font-size:130px">Estamos</div>
+      <div class="big neon" id="h2b" style="font-size:122px">contratando!</div>
+    </div>
+  </div>
+
+  <!-- 3. Vaga -->
+  <div id="s3" class="clip" data-start="10" data-duration="5">
+    <div class="scene">
+      <div class="tag" id="t3" style="font-size:64px;margin-bottom:30px">Vaga aberta</div>
+      <div class="big cy" id="h3a" style="font-size:150px">Vaga:</div>
+      <div class="big" id="h3b" style="font-size:112px;margin-top:10px">Vendedor<span class="neon">(a)</span></div>
+      <svg id="u3" width="800" height="30" viewBox="0 0 800 30" style="margin-top:36px"><rect id="ubar" x="0" y="8" width="800" height="14" rx="7" fill="url(#wg)"/></svg>
+    </div>
+  </div>
+
+  <!-- 4. Diferencial -->
+  <div id="s4" class="clip" data-start="15" data-duration="5">
+    <div class="scene">
+      <div class="pill" id="p4" style="margin-bottom:56px;font-size:64px">⭐ Diferencial</div>
+      <div class="big" id="h4a" style="font-size:120px">Experiência</div>
+      <div class="big cy" id="h4b" style="font-size:120px">com vendas</div>
+      <div class="big" id="h4c" style="font-size:120px">é um</div>
+      <div class="big neon" id="h4d" style="font-size:112px;margin-top:14px">diferencial!</div>
+    </div>
+  </div>
+
+  <!-- 5. CTA -->
+  <div id="s5" class="clip" data-start="20" data-duration="5">
+    <div class="scene">
+      <div class="wa" id="wa">
+        <svg width="90" height="90" viewBox="0 0 24 24" fill="#05021a"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>
+      </div>
+      <div class="big" id="h5a" style="font-size:96px">Envie seu currículo</div>
+      <div class="tag" id="h5b" style="font-size:60px;margin-top:20px;color:var(--green)">pelo WhatsApp</div>
+      <div class="card" id="card5"><div class="phone" id="ph">(81) 99686-0185</div></div>
+    </div>
+  </div>
+
+  <!-- 6. Encerramento -->
+  <div id="s6" class="clip" data-start="25" data-duration="3">
+    <div class="scene">
+      <svg id="wifi2" width="300" height="240" viewBox="0 0 200 160" style="margin-bottom:30px">
+        <g fill="none" stroke="url(#wg)" stroke-width="12" stroke-linecap="round">
+          <path d="M18 62 A116 116 0 0 1 182 62"/><path d="M42 88 A82 82 0 0 1 158 88"/><path d="M66 114 A46 46 0 0 1 134 114"/>
+        </g><circle cx="100" cy="140" r="13" fill="#2dff9a"/>
+      </svg>
+      <div class="brand" id="b6" style="font-size:132px">Giga<span>Net</span>Pe</div>
+      <div class="sub" id="b6s" style="font-size:48px">Telecom</div>
+      <div class="tag" id="b6t" style="margin-top:44px;color:#fff;font-size:52px">Venha fazer parte do time! 🚀</div>
+    </div>
+  </div>
+
+  <script src="./gsap.min.js"></script>
+  <script>
+    // seeded RNG => deterministic frames
+    let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const tl = gsap.timeline({ paused: true });
+
+    // stars
+    const stars = document.getElementById('stars');
+    for (let i = 0; i < 90; i++) {
+      const s = document.createElement('div'); s.className = 'star';
+      const z = 2 + rnd() * 5; s.style.cssText = `width:${z}px;height:${z}px;left:${rnd()*1080}px;top:${rnd()*1500}px;opacity:${.25+rnd()*.7}`;
+      stars.appendChild(s);
+      tl.to(s, { opacity: .1 + rnd() * .3, duration: 1 + rnd() * 2, repeat: 7, yoyo: true, ease: 'sine.inOut' }, rnd() * 2);
+    }
+    tl.to(stars, { y: 120, duration: 28, ease: 'none' }, 0);
+
+    // network
+    const net = document.getElementById('net'), NS = 'http://www.w3.org/2000/svg';
+    const pts = []; for (let i = 0; i < 16; i++) pts.push([rnd()*1080, 200 + rnd()*1250]);
+    pts.forEach((a, i) => pts.forEach((b, j) => {
+      if (j > i && Math.hypot(a[0]-b[0], a[1]-b[1]) < 380) {
+        const l = document.createElementNS(NS, 'line');
+        l.setAttribute('x1',a[0]);l.setAttribute('y1',a[1]);l.setAttribute('x2',b[0]);l.setAttribute('y2',b[1]);
+        l.setAttribute('stroke','#19f3ff');l.setAttribute('stroke-width','2');l.setAttribute('opacity','.22');
+        net.appendChild(l);
+      }
+    }));
+    const dots = pts.map(p => { const c = document.createElementNS(NS,'circle');
+      c.setAttribute('cx',p[0]);c.setAttribute('cy',p[1]);c.setAttribute('r','7');c.setAttribute('fill','#2dff9a');c.setAttribute('opacity','.6');
+      net.appendChild(c); return c; });
+    dots.forEach((d, i) => tl.to(d, { attr: { r: 14 }, opacity: 1, duration: .9, repeat: 29, yoyo: true, ease: 'sine.inOut' }, (i % 6) * .3));
+    tl.to('#g1', { x: 180, y: 120, duration: 28, ease: 'sine.inOut' }, 0);
+    tl.to('#g2', { x: -160, y: -140, duration: 28, ease: 'sine.inOut' }, 0);
+
+    // scene helper: fade out at end
+    const out = (id, t) => tl.to(id, { opacity: 0, scale: 1.06, duration: .4, ease: 'power2.in' }, t);
+
+    // S1
+    tl.set('#s1 .scene', { opacity: 1 }, 0)
+      .from('#s1 .arc', { opacity: 0, scale: .4, transformOrigin: '100px 140px', duration: .5, stagger: .22, ease: 'back.out(2)' }, .2)
+      .from('#dot', { scale: 0, transformOrigin: '50% 50%', duration: .4, ease: 'back.out(3)' }, 0)
+      .to('#s1 .arc', { opacity: .35, duration: .5, stagger: { each: .15, repeat: 2, yoyo: true }, ease: 'sine.inOut' }, 1.6)
+      .from('#b1', { y: 90, opacity: 0, scale: .7, duration: .7, ease: 'back.out(1.8)' }, .9)
+      .from('#b2', { opacity: 0, scale: 1.6, duration: .9, ease: 'power3.out' }, 1.3)
+      .from('#b3', { opacity: 0, y: 30, duration: .6 }, 2.2);
+    out('#s1 .scene', 4.6);
+
+    // S2
+    tl.from('#p2', { opacity: 0, scale: .5, duration: .5, ease: 'back.out(2.5)' }, 5.1)
+      .from('#h2a', { x: -700, opacity: 0, duration: .55, ease: 'power4.out' }, 5.5)
+      .from('#h2b', { x: 700, opacity: 0, duration: .55, ease: 'power4.out' }, 5.8)
+      .to('#h2b', { scale: 1.07, duration: .35, repeat: 5, yoyo: true, ease: 'sine.inOut' }, 6.5)
+      .to('#p2', { boxShadow: '0 0 90px rgba(45,255,154,1)', duration: .4, repeat: 5, yoyo: true }, 6);
+    out('#s2 .scene', 9.6);
+
+    // S3
+    tl.from('#t3', { opacity: 0, y: -40, duration: .5 }, 10.1)
+      .from('#h3a', { scale: 2.4, opacity: 0, duration: .6, ease: 'power4.out' }, 10.4)
+      .from('#h3b', { y: 120, opacity: 0, duration: .6, ease: 'back.out(1.7)' }, 10.9)
+      .from('#ubar', { scaleX: 0, transformOrigin: '0 50%', duration: .8, ease: 'power3.inOut' }, 11.5)
+      .to('#h3b', { scale: 1.05, duration: .4, repeat: 5, yoyo: true, ease: 'sine.inOut' }, 12.3);
+    out('#s3 .scene', 14.6);
+
+    // S4
+    tl.from('#p4', { opacity: 0, scale: .4, rotation: -12, duration: .5, ease: 'back.out(2.5)' }, 15.1)
+      .from('#h4a', { y: 80, opacity: 0, duration: .45, ease: 'power3.out' }, 15.6)
+      .from('#h4b', { y: 80, opacity: 0, duration: .45, ease: 'power3.out' }, 16.1)
+      .from('#h4c', { y: 80, opacity: 0, duration: .45, ease: 'power3.out' }, 16.6)
+      .from('#h4d', { scale: 2, opacity: 0, duration: .6, ease: 'back.out(2)' }, 17.2)
+      .to('#h4d', { scale: 1.06, duration: .35, repeat: 5, yoyo: true, ease: 'sine.inOut' }, 18);
+    out('#s4 .scene', 19.6);
+
+    // S5
+    tl.from('#wa', { scale: 0, rotation: -90, duration: .6, ease: 'back.out(2.5)' }, 20.1)
+      .to('#wa', { scale: 1.12, duration: .4, repeat: 7, yoyo: true, ease: 'sine.inOut' }, 20.8)
+      .from('#h5a', { opacity: 0, y: 60, duration: .5 }, 20.6)
+      .from('#h5b', { opacity: 0, y: 40, duration: .5 }, 21)
+      .from('#card5', { opacity: 0, scale: .6, duration: .6, ease: 'back.out(2)' }, 21.4)
+      .to('#card5', { boxShadow: '0 0 110px rgba(45,255,154,.9)', borderColor: '#2dff9a', duration: .45, repeat: 5, yoyo: true }, 22.2);
+    out('#s5 .scene', 24.6);
+
+    // S6
+    tl.from('#wifi2', { opacity: 0, scale: .3, duration: .6, ease: 'back.out(2)' }, 25.1)
+      .from('#b6', { opacity: 0, y: 60, duration: .6, ease: 'back.out(1.8)' }, 25.4)
+      .from('#b6s', { opacity: 0, scale: 1.6, duration: .7 }, 25.7)
+      .from('#b6t', { opacity: 0, y: 30, duration: .6 }, 26.3)
+      .to('#root', { opacity: 0, duration: .5 }, 27.5);
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines['root'] = tl;
+  </script>
+</div>
+</body>
+</html>
